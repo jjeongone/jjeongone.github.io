@@ -37,8 +37,6 @@ published: false
 
 - [검색어 자동완성](https://www.synapsoft.co.kr/blog/6025): python기반 검색어 자동완성 기능 구현. 근데 엄청 예전 포스트라서 최신 기술 찾아보는게 더 나을지도?
 
-<br>
-
 #### iOS 개발(선택): Swift
 
 - [공식문서](https://swift.org/)
