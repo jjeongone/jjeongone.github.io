@@ -23,7 +23,7 @@ published: false
 
 - [nestjs 공식문서](https://docs.nestjs.com/)
 - [nestjs 공식문서를 보고 공부중인 git](https://github.com/jjeongone/2021_poapper_nest_js_seminar): 정리중인데 엄청 엉성하고 아직 한참 남았음
-- [생활코딩 - Javascript](https://opentutorials.org/course/743): 외에도 앱개발 관련된 내용들 생활코딩 보면 좋다. 
+- [생활코딩 - Javascript](https://opentutorials.org/course/743): 외에도 앱개발 관련된 내용들 생활코딩 보면 좋다
 - [생활코딩 - node.js](https://opentutorials.org/course/3332)
 - [생활코딩 - DB](https://opentutorials.org/course/195)
 - [poiemaweb - 웹개발 전반](https://poiemaweb.com/)
