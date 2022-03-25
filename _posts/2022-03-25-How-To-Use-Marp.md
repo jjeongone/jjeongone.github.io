@@ -3,20 +3,19 @@ layout: post
 title: "Markdown을 이용하여 presentation 만들기 (with.Marp)"
 date: 20220325
 published: true
+tags: [marp, presentation]
 ---
 
 # **How To Use Marp**
 
-![](../assets/images/marp/marp.svg)
+![](/assets/images/marp/marp.svg)
 
 <br>
 
 ## Markdown의 장점? :thinking:
 
 빠르게 편집이 가능하다 / 직관적이다 / 활용도가 높다 / 편하다(?)
-
-
-![](../assets/images/marp/marp_1.png)
+![](/assets/images/marp/marp_1.png)
 
 ## Before use Marp: TODOs
 
@@ -32,16 +31,16 @@ published: true
 
 *엄 청 쉽 다 ~~(진짜)~~*
 
-![](../assets/images/marp/marp_5.png)
+![](/assets/images/marp/marp_5.png)
 
 
 ## 2. vscode에 **Marp for VS Code** extension 설치하기
 
-![](../assets/images/marp/marp_2.png)
+![](/assets/images/marp/marp_2.png)
 
-![](../assets/images/marp/marp_3.png)
+![](/assets/images/marp/marp_3.png)
 
-![](../assets/images/marp/marp_4.png)
+![](/assets/images/marp/marp_4.png)
 
 
 ## 3. Marp 문법 익히기
