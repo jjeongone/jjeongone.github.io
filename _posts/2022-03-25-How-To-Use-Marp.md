@@ -7,7 +7,7 @@ published: true
 
 # **How To Use Marp**
 
-![Marp logo](../images/marp/marp.svg)
+![](../assets/images/marp/marp.svg)
 
 <br>
 
@@ -16,7 +16,7 @@ published: true
 빠르게 편집이 가능하다 / 직관적이다 / 활용도가 높다 / 편하다(?)
 
 
-![](../images/marp/marp_1.png)
+![](../assets/images/marp/marp_1.png)
 
 ## Before use Marp: TODOs
 
@@ -32,16 +32,16 @@ published: true
 
 *엄 청 쉽 다 ~~(진짜)~~*
 
-![](../images/marp/marp_5.png)
+![](../assets/images/marp/marp_5.png)
 
 
 ## 2. vscode에 **Marp for VS Code** extension 설치하기
 
-![](../images/marp/marp_2.png)
+![](../assets/images/marp/marp_2.png)
 
-![](../images/marp/marp_3.png)
+![](../assets/images/marp/marp_3.png)
 
-![](../images/marp/marp_4.png)
+![](../assets/images/marp/marp_4.png)
 
 
 ## 3. Marp 문법 익히기
@@ -127,5 +127,5 @@ HEX 색상의 경우 google에 `color picker`로 검색을 하거나 임의의 H
 
 ### 참고문헌
 
-- https://marpit.marp.app/
-- https://github.com/marp-team/marp-vscode
+- [marp 공식 문서](https://marpit.marp.app/)
+- [marp GitHub](https://github.com/marp-team/marp-vscode)
