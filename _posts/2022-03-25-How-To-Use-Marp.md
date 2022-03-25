@@ -7,7 +7,7 @@ published: true
 
 # **How To Use Marp**
 
-![](../images/marp/marp.svg)
+![Marp logo](../images/marp/marp.svg)
 
 <br>
 
