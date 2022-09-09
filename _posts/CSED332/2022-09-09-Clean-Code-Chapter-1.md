@@ -9,8 +9,6 @@ published: true
 
 *오타나 지적은 항상 환영합니다.*
 
-# Chapter 1. Clean Code
-
 ## There Will Be Code
 우리는 code를 왜 작성하는가. Code는 어떠한 요구나 목적을 달성하기 위한 *언어*이고, 철저하고 엄격하며 정확하다는 특징을 가진다.
 

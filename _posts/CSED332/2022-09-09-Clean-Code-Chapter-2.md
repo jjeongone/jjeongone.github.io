@@ -9,8 +9,6 @@ published: true
 
 *오타나 지적은 항상 환영합니다.*
 
-# Chapter 2. Meaningful Names
-
 ## Use Intention-Revealing Names
 직관적인 naming은 상당히 중요하다. Variable이나 function, class 등의 이름은 **왜 그것들이 존재**하고 **어떻게 사용**될 수 있는지를 드러낼 수 있어야 한다.
 
