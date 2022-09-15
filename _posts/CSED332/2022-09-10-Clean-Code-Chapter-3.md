@@ -5,9 +5,7 @@ date: 20220910
 tag: [Book, SD]
 published: true
 ---
-*`Thoughts` 항목은 개인적인 생각이며, 본문 또한 직접적인 번역이 아닌 주관이 들어간 각색임을 유의해 주시기 바랍니다.*
-
-*오타나 지적은 항상 환영합니다.*
+*이 문서는 2022년도 가을학기 포스텍 박성우 교수님의 소프트웨어설계 수업을 들으며 Clean Code를 요약한 문서입니다. `Thoughts` 항목은 개인적인 생각이며, 본문 또한 직접적인 번역이 아닌 주관이 들어간 각색임을 유의해 주시기 바랍니다. 오타나 지적은 항상 환영합니다.* 😄
 
 <hr>
 
@@ -207,3 +205,35 @@ public void delete(Page page) {
 사실 refactoring에 대한 은연중의 망설임이 있었다. 지금까지는 단발적으로 사용하는 코드들을 짜오다 보니 형태가 마음에 들지 않아도 기능만 잘 하면 된다는 생각이 강했는데, 이렇게 어물쩡 넘겨버린 좋은 코드를 연습할 수 있는 기회를 앞으로는 놓치지 않으려고 한다.
 
 적절한 이름을 위한 고민은 끝이 없을 것 같다.
+
+<br>
+<hr>
+<br>
+
+## Lecture Summary
+- ***Function should be small***
+- [Spark style guide](https://github.com/databricks/scala-style-guide)
+- Do one thing and do it well
+- 만약 함수가 do multiple things를 한다면 이름에 해당 기능에 대한 모든 verb를 넣어 함수명만 봐도 알아차릴 수 있도록 한다
+- 설명 가능한 이름을 지어라
+  - 길어도 관계 없으니 나중에 다시 봐도 빠르고 정확하게 이해할 수 있는 이름을 짓기
+- 스스로의 naming convention에 대해서 고민해보기
+  - 이름을 잘 짓는다는 것 == 스스로의 코드에 대한 이해도가 높다는 것
+  - 우선은 내가 잘 이해할 수 있어야 하니까
+  - 만약 협업을 해야 한다면 같이 정하는 것이 맞는지, 한 사람이 정하고 다른 사람이 따르는게 맞는지?
+- 함수 인자의 수를 최소화하기
+  - argument가 작을수록 읽기/이해하기 쉽다
+  - argument를 잘못 넘기면 컴파일하기가 정말 쉽지 않음
+    - error를 막기 위해서 최대한 적은 수의 argument를 사용
+- Have No Side Effects
+  - 특히 concurrent programming을 하는 데 중요하다
+  - `increment`, `initialize`, `reset`과 같은 prefix를 통해서 어떤 변화를 주는지를 알려준다
+  - 만약 side effect를 피할 수 없다면 `WARN: ~~`을 통해서 알려주어야 한다
+- Command & Query Seperation
+  - ex) decrementAndReturnIfZero: `decrement`는 command, `ReturnIfZero`는 query
+    - 위의 예시에서는 둘을 나눌 수 있음
+    - 아닌 경우에는 이름을 통해 명시해주기
+- Prefer Exception to Returning Error Codes
+  - 꼭 필요할 때만 error code를 작성
+  - `try/catch`, `try/finally` 로직을 사용하는게 좋다
+  - production에서 상당히 중요하기 때문에 많은 시간을 쏟는게 당연하다

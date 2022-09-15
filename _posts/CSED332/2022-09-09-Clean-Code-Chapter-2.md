@@ -5,9 +5,7 @@ date: 20220909
 tag: [Book, SD]
 published: true
 ---
-*`Thoughts` 항목은 개인적인 생각이며, 본문 또한 직접적인 번역이 아닌 주관이 들어간 각색임을 유의해 주시기 바랍니다.*
-
-*오타나 지적은 항상 환영합니다.*
+*이 문서는 2022년도 가을학기 포스텍 박성우 교수님의 소프트웨어설계 수업을 들으며 Clean Code를 요약한 문서입니다. `Thoughts` 항목은 개인적인 생각이며, 본문 또한 직접적인 번역이 아닌 주관이 들어간 각색임을 유의해 주시기 바랍니다. 오타나 지적은 항상 환영합니다.* 😄
 
 ## Use Intention-Revealing Names
 직관적인 naming은 상당히 중요하다. Variable이나 function, class 등의 이름은 **왜 그것들이 존재**하고 **어떻게 사용**될 수 있는지를 드러낼 수 있어야 한다.
@@ -110,3 +108,25 @@ Naming을 함에 있어 어휘를 통일시켜야 한다. 만약 서로 다른 c
 
 ## Thoughts
 당연하다고 생각했던 내용, 경험적으로 불편하게 느꼈던 방식(소문자 `L`을 변수명으로 사용하는 것)을 포함하여 코딩을 함에 있어 *가장 기초*라고 할 수 있는 이름 짓기에 대해 고민을 해볼 수 있는 장이었다. 또한 모든 꼭지들에서 **남들이 읽기 쉽고, 이해하기 쉬운 코드**에 대한 강조를 강하게 하고 있었다. 사실 대학교에서 과제를 할 때에는 보통 개인 과제이고, 팀프로젝트를 하더라도 규모가 그렇게 크지는 않기 때문에 코드를 작성함에 있어 readability를 고려할 필요성이 거의 없었다. 현재로써는 과거에 작성한 코드를 봐야 할 일이 거의 없지만, 앞으로라도 미래의 나를 위해 좀 더 신경써서 코딩을 해야 겠다는 생각이 들었다.
+
+<br>
+<hr>
+<br>
+
+## Lecture Summary
+- 누구나 의도를 파악할 수 있는 이름을 사용하라
+- 좋은/최선의 이름을 짓기 위해 시간을 사용하는 것을 시간낭비라고 생각하지 말라
+- 스스로의 naming convention을 정해서 지켜라
+  - ex) Naming Convention in Tests: `modify<A>By<...ing>`, `modify<A>ByFaking<...>`
+- 발음할 수 있는 이름을 사용해라: 코딩을 하면서 스스로 읽을 수 있는 언어를 사용해야 한다
+- 검색할 수 있는 이름을 사용해라
+  - 일정한 단어를 사용해서 나중에 검색하기 쉽도록 하기
+- Guideline for Choosing Names
+  - Class: compose nouns
+    - ex) `Customer`, `Account`
+  - Method: begin with a verb
+    - consistent하게 짓기: 기본적인 영어 문법과 어휘를 알아야 한다
+    - In Scala, does not use getter/setter
+      - immutability, functional programming: 즉, 값을 변화시킨다는 개념 자체가 어색하다
+    - Boolean
+      - prefix: `is~`, `exist~`
