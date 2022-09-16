@@ -93,28 +93,38 @@ String listItemContent = match.group(3).trim();
 ## Bad Comments
 대부분의 comment들이 이 category에 해당한다. Bad comment들은 대게 적절하지 못한 결정이나 구린 코드를 정당화하는 데 사용되지 때문에 피해야 한다.
 
-- **Mumbling**: 만약 comment를 작성하기로 마음먹었다면, 심혈을 기울여 최선의 comment를 작성해라.
-- **Redundant Comments**: Comment가 오로지 코드에 작성되어 있는 내용을 그대로 서술하는 것은 낭비이다. 오히려 길고 구어적인 comment가 코드보다 읽기 어려울 수 있다.
-- **Misleading Comments**: 잘못 읽혀 오해의 소지가 있는 comment를 작성하지 않도록 주의하자.
-- **Mandated Comments**: 모든 변수나 함수에 comment를 달아야 한다고 생각하지 말아라.
-- **Journal Comments**: 모든 변화가 일어날 때 마다 일기 쓰듯이 일일히 주석을 다는 행위는 불필요하다.
-- **Don't Use a Comment When You Can Use a Function or a Variable**: Comment에 작성된 내용을 function이나 variable을 통해 구현한 예시는 다음과 같다.
-    ```Java
-    // does the module from the global list <mod> depend on the subsystem we are part of?
-    if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
-    ```
-    ```Java
-    ArrayList moduelDependees = smodule.getDependSubSystems();
-    String ourSubSystem = subSysMod.getSubSystem();
-    if (moduleDependees.contains(ourSubSystem))
-    ```
-- **Position Markers**: Comment를 이용하여 특정한 위치를 알리는 marker를 만들고 싶을 수는 있지만, 보통은 거추장스럽고 제 기능을 하지 못한다.
-- **Closing Brace Comments**: 중괄호가 끝나는 부분에서 어느 문(state)인지를 나타내는 주석을 달면 읽기 편할 수는 있지만, 차라리 코드를 간결하게 짜는 편이 좋다.
-- **Attributions and Bylines**: 누가 작성한 코드인지 명시해두면 질문을 할 때 유용할 수는 있지만, 코드는 변화하고 사람도 유동적이기 때문에 비효율적이다. (git을 쓰면 누가 수정했는지 알 수 있으니 코드에 명시하는건 정말 별로인듯?)
-- **Commented-Out Code**: 주석처리된 코드를 남겨두지 말아라. 누군가 주석 처리된 코드를 본다면 필요한 코드인지 그렇지 않은지 알 수 없기 때문에 차마 건드리지 못할 것이다.(옛날에는 필요했을 수도 있지만 지금은 전혀 아니다)
-- **HTML Comments**: HTML로 작성된 comment는 programmer가 읽기에는 최악이다. 어떤 program이나 IDE를 거쳐 읽기 쉽게 반환되는 경우에는 몰라도, 사람이 읽을 것이 못된다.
-- ***TMI(Too Much Information)***
-- 
+### Mumbling
+만약 comment를 작성하기로 마음먹었다면, 심혈을 기울여 최선의 comment를 작성해라.
+### Redundant Comments
+Comment가 오로지 코드에 작성되어 있는 내용을 그대로 서술하는 것은 낭비이다. 오히려 길고 구어적인 comment가 코드보다 읽기 어려울 수 있다.
+### Misleading Comments
+잘못 읽혀 오해의 소지가 있는 comment를 작성하지 않도록 주의하자.
+### Mandated Comments
+모든 변수나 함수에 comment를 달아야 한다고 생각하지 말아라.
+### Journal Comments
+모든 변화가 일어날 때 마다 일기 쓰듯이 일일히 주석을 다는 행위는 불필요하다.
+### Don't Use a Comment When You Can Use a Function or a Variable
+Comment에 작성된 내용을 function이나 variable을 통해 구현한 예시는 다음과 같다.
+```Java
+// does the module from the global list <mod> depend on the subsystem we are part of?
+if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
+```
+```Java
+ArrayList moduelDependees = smodule.getDependSubSystems();
+String ourSubSystem = subSysMod.getSubSystem();
+if (moduleDependees.contains(ourSubSystem))
+```
+### Position Markers
+Comment를 이용하여 특정한 위치를 알리는 marker를 만들고 싶을 수는 있지만, 보통은 거추장스럽고 제 기능을 하지 못한다.
+### Closing Brace Comments
+중괄호가 끝나는 부분에서 어느 문(state)인지를 나타내는 주석을 달면 읽기 편할 수는 있지만, 차라리 코드를 간결하게 짜는 편이 좋다.
+### Attributions and Bylines
+누가 작성한 코드인지 명시해두면 질문을 할 때 유용할 수는 있지만, 코드는 변화하고 사람도 유동적이기 때문에 비효율적이다. (git을 쓰면 누가 수정했는지 알 수 있으니 코드에 명시하는건 정말 별로인듯?)
+### Commented-Out Code
+주석처리된 코드를 남겨두지 말아라. 누군가 주석 처리된 코드를 본다면 필요한 코드인지 그렇지 않은지 알 수 없기 때문에 차마 건드리지 못할 것이다.(옛날에는 필요했을 수도 있지만 지금은 전혀 아니다)
+### HTML Comments
+HTML로 작성된 comment는 programmer가 읽기에는 최악이다. 어떤 program이나 IDE를 거쳐 읽기 쉽게 반환되는 경우에는 몰라도, 사람이 읽을 것이 못된다.
+### *TMI(Too Much Information)*
 
 ## Thoughts
 주석이 없는 코드가 좋은 코드라는 말은 컴공 전공을 선택한 이후로 늘 듣고 있는 말이지만, 이렇게까지 주석을 싫어하는 글은 처음이었다. 주석이 귀가 있다면 귀를 막고 눈이 있다면 눈을 가려주고 싶을 정도로..😶
