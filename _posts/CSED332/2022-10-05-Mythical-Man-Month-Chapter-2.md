@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Mythical Man-Month] Chapter 2. The Mythical Man-Month"
-date: 20220929
+date: 20221006
 tag: [Book, SD]
 published: true
 ---
