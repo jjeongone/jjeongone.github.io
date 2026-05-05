@@ -1,0 +1,45 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+$font-sans: 'Roboto Serif', 'Noto Serif KR', serif;
+$font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+html,
+body {
+  font-family: $font-sans;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+code,
+pre,
+kbd,
+samp,
+tt {
+  word-break: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.post-meta,
+#sidebar .site-title,
+#sidebar .site-subtitle {
+  font-family: $font-sans;
+}
+
+code,
+pre,
+kbd,
+samp,
+tt,
+.highlight,
+.code-header {
+  font-family: $font-mono;
+}
